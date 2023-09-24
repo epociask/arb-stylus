@@ -24,9 +24,10 @@ Run `python3 rust_verify.py -r "<GIT_REPO>" -d "<DEPENDENCY_NAME> -v "<DEPENDENC
     - `<DEPENDENCY_VERSION>` is the version of the dependency
 
 
+### Batch
+The `batch.py` script can be used to process all rust crates exposed by [crates.io](https://crates.io/) API. It will output a csv file with the results of the validation process. This is useful to get a general idea of the compatibility of the rust ecosystem with Stylus as well as to identify which crates are compatible and which are not.
+
 #### Future Work
 - Add support for more languages
 - Add more tests
 - Add more documentation
-- Add this PoC as a feature to the Stylus SDK CLIs
-- Add batch analysis to provide a report of all valid third party rust dependencies
