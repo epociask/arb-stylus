@@ -19,6 +19,9 @@ def get_error_type(error: str) -> str:
     if "failed to build project to WASM:" in error:
         return "BUILD"
     
+    if "No such file or directory:" in error and "Cargo.toml" in error:
+        return "NO_CARGO_TOML"
+    
     return "UNKNOWN"
 
 
